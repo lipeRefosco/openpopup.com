@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script lang="javascript" src="script.js" defer></script>
+    <title>Open PopUp</title>
+</head>
+
+<body>
+    <div class="container flex flex-collum">
+        <h1 class="txt-center">Open PopUp</h1>
+        <p class="txt-center">Informe a URL e o tamanho desejado para abrir o popup</p>
+        <form class="container flex flex-collum" method="get" enctype="application/x-www-form-urlencoded">
+            <div class="flex flex-collum">
+                <label class="label" for="uri">
+                    <h5>URI</h5>
+                    <div class="input">
+                        <div class="icon flex">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31 16C31 24.2843 24.2843 31 16 31M31 16C31 7.71573 24.2843 1 16 1M31 16H1M16 31C7.71573 31 1 24.2843 1 16M16 31C20.1421 31 23.5 24.2843 23.5 16C23.5 7.71573 20.1421 1 16 1M16 31C11.8579 31 8.5 24.2843 8.5 16C8.5 7.71573 11.8579 1 16 1M1 16C1 7.71573 7.71573 1 16 1"
+                                    stroke="black" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <input id="uri" value="" name="uri" type="text" placeholder="Insira a URL" />
+                    </div>
+                </label>
+            </div>
+            <div class="flex">
+                <label class="label" for="width">
+                    <h5>Largura (px)</h5>
+                    <div class="input">
+                        <div class="icon flex">
+                            <svg width="32" height="15" viewBox="0 0 32 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.292893 6.65685C-0.0976311 7.04738 -0.0976311 7.68054 0.292893 8.07107L6.65685 14.435C7.04738 14.8256 7.68054 14.8256 8.07107 14.435C8.46159 14.0445 8.46159 13.4113 8.07107 13.0208L2.41421 7.36396L8.07107 1.70711C8.46159 1.31658 8.46159 0.683417 8.07107 0.292892C7.68054 -0.0976319 7.04738 -0.0976319 6.65685 0.292892L0.292893 6.65685ZM31.7071 8.07107C32.0976 7.68054 32.0976 7.04738 31.7071 6.65685L25.3431 0.292892C24.9526 -0.0976319 24.3195 -0.0976319 23.9289 0.292892C23.5384 0.683417 23.5384 1.31658 23.9289 1.70711L29.5858 7.36396L23.9289 13.0208C23.5384 13.4113 23.5384 14.0445 23.9289 14.435C24.3195 14.8256 24.9526 14.8256 25.3431 14.435L31.7071 8.07107ZM1 7.36396V8.36396H31V7.36396V6.36396H1V7.36396Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <input id="width" value="1200" name="width" type="text" placeholder="Largura">
+                    </div>
+                </label>
+                <label class="label" class="flex-collum" for="height">
+                    <h5>Altura (px)</h5>
+                    <div class="input">
+                        <div class="icon flex">
+                            <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.07107 0.292893C7.68054 -0.0976311 7.04738 -0.0976311 6.65685 0.292893L0.292892 6.65685C-0.0976322 7.04738 -0.0976322 7.68054 0.292892 8.07107C0.683417 8.46159 1.31658 8.46159 1.70711 8.07107L7.36396 2.41421L13.0208 8.07107C13.4113 8.46159 14.0445 8.46159 14.435 8.07107C14.8256 7.68054 14.8256 7.04738 14.435 6.65685L8.07107 0.292893ZM6.65685 31.7071C7.04738 32.0976 7.68054 32.0976 8.07107 31.7071L14.435 25.3431C14.8256 24.9526 14.8256 24.3195 14.435 23.9289C14.0445 23.5384 13.4113 23.5384 13.0208 23.9289L7.36396 29.5858L1.70711 23.9289C1.31658 23.5384 0.683416 23.5384 0.292891 23.9289C-0.097633 24.3195 -0.097633 24.9526 0.292891 25.3431L6.65685 31.7071ZM7.36396 1L6.36396 1L6.36396 31L7.36396 31L8.36396 31L8.36396 1L7.36396 1Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <input id="height" value="800" name="height" type="text" placeholder="Largura">
+                    </div>
+                </label>
+            </div>
+            <div class="flex flex-collum pos-relative">
+                <label class="flex flex-collum pos-relative" for="open">
+                    <input id="open" name="open" type="hidden" value="true">
+                    <input class="submit" type="submit" value="🔗 Abrir">
+
+                </label>
+            </div>
+        </form>
+        <span class="txt-center">
+            <h6>A página será aberta em uma janela popup com o tamanho especificado.</h6>
+        </span>
+    </div>
+</body>
+
+</html>

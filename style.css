@@ -1,0 +1,91 @@
+body {
+    background-color: #f0f3fd;
+    color: #333;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 1rem;
+    background: transparent;
+    border: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+h5, h6 {
+    font-weight: normal;
+}
+
+form {
+    background-color: white;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.container {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input {
+    display: flex;
+    outline: 1px solid #cacfde;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.input input {
+    width: 100%;
+}
+
+.input .icon {
+    width: 64px;
+    height: 64px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f3fd;
+}
+.input .icon svg{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-collum {
+    flex-direction: column;
+}
+
+.submit {
+    background-color: #1859ec;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.pos-relative {
+    position: relative;
+}
+
